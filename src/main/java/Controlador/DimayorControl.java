@@ -92,7 +92,7 @@ public class DimayorControl {
     // 3. Buscar equipo - SOBRECARGA
     private void buscarEquipo() {
         String nombre = vista.pedirNombreEquipo();
-        // Busca por nombre (sobrecarga con String)
+        
         DimayorModelo encontrado = buscar(nombre);
         if (encontrado != null) {
             vista.mostrarMensaje("EQUIPO ENCONTRADO:\n\n" + encontrado.toString());
