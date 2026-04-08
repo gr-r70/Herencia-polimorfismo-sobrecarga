@@ -71,11 +71,13 @@ public class DimayorControl {
 
     // 1. Listado completo de equipos
     private void listarEquipos() {
-        String mensaje = "===== LISTADO DE EQUIPOS =====\n\n";
+        String mensaje = "===== LISTADO DE EQUIPOS =====\n";
+        int numero = 1;
         for (DimayorModelo e : listaEquipos) {
             if (e instanceof EquiposPuntajes) {
-                mensaje += e.toString() + "\n";
-                mensaje += "------------------------------\n";
+                mensaje += numero + ". " + e.getNomEquipo() + "\n";
+                numero++;
+                
             }
         }
         vista.mostrarMensaje(mensaje);
@@ -125,21 +127,16 @@ public class DimayorControl {
         return mayor;
     }
 
+
     // SOBRECARGA: buscar por nombre (String)
     public DimayorModelo buscar(String nomEquipo) {
         for (DimayorModelo e : listaEquipos) {
-            if (e.getNomEquipo().equalsIgnoreCase(nomEquipo)) {
+            
+            if (e.equipo.equalsIgnoreCase(nomEquipo)) {  
                 return e;
             }
         }
         return null;
     }
 
-    // SOBRECARGA: buscar por índice (int)
-    public DimayorModelo buscar(int indice) {
-        if (indice >= 0 && indice < listaEquipos.size()) {
-            return listaEquipos.get(indice);
-        }
-        return null;
-    }
 }

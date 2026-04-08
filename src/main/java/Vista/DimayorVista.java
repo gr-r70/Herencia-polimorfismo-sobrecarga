@@ -26,7 +26,7 @@ public class DimayorVista {
     }
 
     public String pedirNombreEquipo() {
-        return JOptionPane.showInputDialog("Ingrese el nombre del equipo a buscar\n(Ejemplo: Deportivo Pasto (1949)):");
+        return JOptionPane.showInputDialog("Ingrese el nombre del equipo a buscar\n(Ejemplo: Deportivo Pasto):");
     }
 
     public void mostrarMensaje(String mensaje) {

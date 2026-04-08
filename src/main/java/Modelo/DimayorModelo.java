@@ -7,7 +7,7 @@ package Modelo;
 
 public class DimayorModelo {
     
-    protected String equipo;
+    public String equipo;
     protected int pg;
     protected int pe;
     protected int pp;
