@@ -11,7 +11,7 @@ public class DimayorVista {
     public int menuInicio() {
         String menu = """
                       
-                        DIMAYOR - Fútbol Profesional Colombiano
+                        División Mayor del Fútbol Profesional Colombiano
                       
                         1. Listado de Equipos
                         2. Mayor Puntaje Alcanzado
@@ -26,7 +26,7 @@ public class DimayorVista {
     }
 
     public String pedirNombreEquipo() {
-        return JOptionPane.showInputDialog("Ingrese el nombre del equipo a buscar\n(Ejemplo: America de Cali (Cali)):");
+        return JOptionPane.showInputDialog("Ingrese el nombre del equipo a buscar\n(Ejemplo: Deportivo Pasto (1949)):");
     }
 
     public void mostrarMensaje(String mensaje) {
